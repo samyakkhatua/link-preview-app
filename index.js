@@ -48,6 +48,7 @@ app.post('/link-preview', (req, res) => {
             // res.json(data)
             res.send(`
             <body>
+            <h4>DO you remember something?! Whatsapp link previews!</h4>
             <div class="previewCard">
             <a href="`+URLL+`"><span class="link"></span></a>
             <img class="urlImg" src="`+image+`" alt=""></img>
@@ -62,6 +63,12 @@ app.post('/link-preview', (req, res) => {
                 margin: 100px;
                 padding: 0;
                 background-color: #EFEAE2;
+            }
+            h4{
+                text-align: center;
+                background: -webkit-linear-gradient(#F04E45, #FBC64C);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
             }
             .previewCard{
                 box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -126,43 +133,6 @@ app.post('/link-preview', (req, res) => {
         });
         
 })
-// app.post('/preview', (req, res) => {
-//     axios(URLL)
-//         .then(response => {
-//             const html = response.data
-//             const $ = cheerio.load(html)
-//             // console.log(html)
- 
-//             const data = []
-
-//             const title = $('meta[property="og:title"]').attr('content') || $('title').text() || $('meta[name="title"]').attr('content')
-//             const description = $('meta[property="og:description"]').attr('content') || $('meta[name="description"]').attr('content')
-
-//             let domain = (new URL(URLL));
-//             domain = domain.hostname
-
-//             // const site_name = $('meta[property="og:site_name"]').attr('content')
-//             const image = $('meta[property="og:image"]').attr('content') || $('meta[property="og:image:url"]').attr('content')
-
-//             data.push({
-//                 title,
-//                 description,
-//                 domain,
-//                 image,
-//                 URLL
-//             })
-            
-//             console.log(data)
-//             res.json(data)
-
-//         }).catch((err) => {
-//             return res.json({
-//               error: "An error has occured, you may have inputted an incorrect url.",
-//               usage: `https://${req.hostname}/?url=https://google.com`
-//             });
-//         });
-        
-// })
 
 app.listen(
     PORT,

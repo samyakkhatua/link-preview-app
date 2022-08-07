@@ -6,14 +6,97 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
-    <link rel="stylesheet" href="src/style.css">
+    <style>
+        html{
+            background-color: black;
+        }
+        body{
+
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        h1{
+            background: -webkit-linear-gradient(#F04E45, #FBC64C);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+        }
+        div{
+            margin: auto;
+            width: 60%;
+            padding: 10px;
+            /* align-items: center; */
+            text-align: center;
+        }
+        .urlInput{
+            width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+
+        }
+        .btn{
+            width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+        }
+        .btn {
+  background-color: #45a049;
+  color: white;
+  font-weight: bold;
+}
+
+
+/* CSS */
+.btn {
+  background-color: #cf245f;
+  background-image: linear-gradient(to bottom right, #fcd34d, #ef4444, #ec4899);
+  border: 0;
+  border-radius: .25rem;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  font-family: ui-sans-serif,system-ui,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  font-size: 1.125rem; /* 18px */
+  font-weight: 600;
+  line-height: 1.75rem; /* 28px */
+  padding: 1rem 1.25rem;
+  text-align: center;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.btn {
+  box-shadow: none;
+}
+
+@media (min-width: 1024px) {
+  .btn {
+    font-size: 1.5rem; /* 24px */
+    padding: 1rem 1.5rem;
+    line-height: 2rem; /* 32px */
+  }
+}
+
+    </style>
 </head>
 <body>
-    <form action="/link-preview" method="POST">
-        <input type="text" name="name"><br>
-
-        <input type="submit">
-    </form> 
+    <div>
+        
+        <h1>Wait! before sharing the link do you want to see the preview?</h1>
+        
+        <form action="/link-preview" method="POST">
+            <input class="urlInput" type="text" name="name" placeholder="www.google.com"><br>
+    
+            <input class="btn" type="submit">
+        </form> 
+    </div>
       
 
     <!-- <div class="previewCard"></div> -->
