@@ -48,7 +48,7 @@ app.post('/link-preview', (req, res) => {
             // res.json(data)
             res.send(`
             <body>
-            <h4>DO you remember something?! Whatsapp link previews!</h4>
+            <h2>DO you remember something?! Whatsapp link previews!</h2>
             <div class="previewCard">
             <a href="`+URLL+`"><span class="link"></span></a>
             <img class="urlImg" src="`+image+`" alt=""></img>
@@ -56,6 +56,10 @@ app.post('/link-preview', (req, res) => {
             <p class="urlDesc">`+description+`</p>
             <p class="urlDomain">www.`+domain+`</p>
             </div>
+  <a href="default.asp" class="button-76" target="_blank">Back to Home</a>
+
+
+
             </body>
 
             <style>
@@ -64,11 +68,11 @@ app.post('/link-preview', (req, res) => {
                 padding: 0;
                 background-color: #EFEAE2;
             }
-            h4{
+            h2{
+                
                 text-align: center;
-                background: -webkit-linear-gradient(#F04E45, #FBC64C);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
             }
             .previewCard{
                 box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -123,6 +127,36 @@ app.post('/link-preview', (req, res) => {
                 padding: 0px 10px 5px 10px;
                 color: #667781;
             }
+            .button-76 {
+                background-color: #cf245f;
+                background-image: linear-gradient(to bottom right, #fcd34d, #ef4444, #ec4899);
+                border: 0;
+                border-radius: .25rem;
+                box-sizing: border-box;
+                color: #fff;
+                cursor: pointer;
+                font-family: ui-sans-serif,system-ui,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+                font-size: 1.125rem; /* 18px */
+                font-weight: 600;
+                line-height: 1.75rem; /* 28px */
+                padding: 1rem 1.25rem;
+                text-align: center;
+                user-select: none;
+                -webkit-user-select: none;
+                touch-action: manipulation;
+              }
+              
+              .button-76:hover {
+                box-shadow: none;
+              }
+              
+              @media (min-width: 1024px) {
+                .button-76 {
+                  font-size: 1.5rem; /* 24px */
+                  padding: 1rem 1.5rem;
+                  line-height: 2rem; /* 32px */
+                }
+              }
             </style>`)
 
         }).catch((err) => {
