@@ -47,6 +47,7 @@ app.post('/link-preview', (req, res) => {
             console.log(data)
             // res.json(data)
             res.send(`
+            <body>
             <div class="previewCard">
             <a href="`+URLL+`"><span class="link"></span></a>
             <img class="urlImg" src="`+image+`" alt=""></img>
@@ -54,7 +55,14 @@ app.post('/link-preview', (req, res) => {
             <p class="urlDesc">`+description+`</p>
             <p class="urlDomain">www.`+domain+`</p>
             </div>
+            </body>
+
             <style>
+            body{
+                margin: 100px;
+                padding: 0;
+                background-color: #EFEAE2;
+            }
             .previewCard{
                 box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
                 max-width: 300px;
