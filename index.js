@@ -56,7 +56,7 @@ app.post('/link-preview', (req, res) => {
             <p class="urlDesc">`+description+`</p>
             <p class="urlDomain">www.`+domain+`</p>
             </div>
-  <a href="default.asp" class="button-76" target="https://link-preview-app-seven.vercel.app/">Back to Home</a>
+  <a href="default.asp" class="button-76" target="https://link-prevu.vercel.app/">Back to Home</a>
 
 
 
