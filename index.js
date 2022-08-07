@@ -48,7 +48,7 @@ app.post('/link-preview', (req, res) => {
             // res.json(data)
             res.send(`
             <body>
-            <h2>DO you remember something?! Whatsapp link previews!</h2>
+            <h2>Hey! do you remember something?! Whatsapp link previews looks like this!</h2>
             <div class="previewCard">
             <a href="`+URLL+`"><span class="link"></span></a>
             <img class="urlImg" src="`+image+`" alt=""></img>
@@ -56,7 +56,7 @@ app.post('/link-preview', (req, res) => {
             <p class="urlDesc">`+description+`</p>
             <p class="urlDomain">www.`+domain+`</p>
             </div>
-  <a href="default.asp" class="button-76" target="_blank">Back to Home</a>
+  <a href="default.asp" class="button-76" target="https://link-preview-app-seven.vercel.app/">Back to Home</a>
 
 
 
@@ -89,8 +89,8 @@ app.post('/link-preview', (req, res) => {
             
             .link {
                 position: absolute;
-                width: 100px;
-                height: 100px;
+                width: 50%;
+                height: 50%;
                 top: 0;
                 left: 0;
                 z-index: 1;
