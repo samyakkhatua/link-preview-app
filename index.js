@@ -50,7 +50,7 @@ app.post('/link-preview', (req, res) => {
             <body>
             <h2>Hey! do you remember something?! Whatsapp link previews looks like this!</h2>
             <div class="previewCard">
-            <a href="`+URLL+`"><span class="link"></span></a>
+            <a href="`+req.body.name+`"><span class="link"></span></a>
             <img class="urlImg" src="`+image+`" alt=""></img>
             <p class="urlTitle">`+title+`</p>
             <p class="urlDesc">`+description+`</p>
