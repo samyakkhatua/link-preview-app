@@ -11,7 +11,7 @@ app.use(bodyParser.urlencoded({ extended:true }));
 const cors = require('cors')
 app.use(cors())
 
-const URLL = 'https://github.com/kubowania/nodejs-webscraper/blob/main/src/app.js'
+const URLL = 'https://github.com/samyakkhatua/link-preview-app/'
 
 app.get('/', function(req, res) {
     res.sendFile(__dirname+"/index.html")
